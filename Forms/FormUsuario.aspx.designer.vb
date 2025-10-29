@@ -59,24 +59,6 @@ Partial Public Class FormUsuario
     Protected WithEvents txtTelefono As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtFechaRegistro.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtFechaRegistro As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control txtRol.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txtRol As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Control ddlRol.
     '''</summary>
     '''<remarks>

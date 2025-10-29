@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Mobile.Master" CodeBehind="FormUsuario.aspx.vb" Inherits="Biblioteca.FormUsuario" %>
+﻿<%@ Page Title="Biblioteca" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Mobile.Master" CodeBehind="FormUsuario.aspx.vb" Inherits="Biblioteca.FormUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container mt-4">
@@ -16,9 +16,8 @@
 
         <asp:TextBox ID="txtTelefono" CssClass="form-control mb-2" placeholder="Teléfono" runat="server"></asp:TextBox>
 
-        <asp:TextBox ID="txtFechaRegistro" CssClass="form-control mb-2" TextMode="Date" placeholder="Fecha de Registro" runat="server"></asp:TextBox>
+        
 
-        <asp:TextBox ID="txtRol" CssClass="form-control mb-2" placeholder="Rol (Lector/Bibliotecario)" runat="server"></asp:TextBox>
 
         <!-- DropDownList  para rol -->
         <asp:DropDownList ID="ddlRol" CssClass="form-control mb-3" runat="server">
@@ -33,9 +32,7 @@
         <!-- Mensaje -->
         <asp:Label ID="lblMensaje" runat="server" CssClass="d-block mt-3 text-success"></asp:Label>
 
-        <!-- Tabla de resultados -->
-        <
-       
+        <!-- Tabla de resultados -->       
             <Columns>
                 <asp:BoundField DataField="IdUsuario" HeaderText="ID" ReadOnly="True" />
                 <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
@@ -43,7 +40,7 @@
                 <asp:BoundField DataField="Apellido2" HeaderText="Apellido2" />
                 <asp:BoundField DataField="Email" HeaderText="Email" />
                 <asp:BoundField DataField="Telefono" HeaderText="Teléfono" />
-                <asp:BoundField DataField="FechaRegistro" HeaderText="Fecha Registro" />
+                 <asp:BoundField DataField="FechaRegistro" HeaderText="Fecha Registro" />
                 <asp:BoundField DataField="Rol" HeaderText="Rol" />
 
                 <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
@@ -51,7 +48,7 @@
 
         </asp:GridView>
 
-        <!-- Fuente de datos opcional -->
+        
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:Proyecto_ProgralllConnectionString %>"
             SelectCommand="SELECT * FROM [Usuarios]"></asp:SqlDataSource>
